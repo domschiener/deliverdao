@@ -24,6 +24,9 @@ FlowRouter.route('/deliver', {
 
 FlowRouter.route('/package/:_id', {
   name: 'Routes.package',
+  subscriptions: function(params) {
+    this.register('thisOrder', Meteor.subscribe('thisOrder', params._id));
+  },
   action(params, queryParams) {
     // TODO throw error if not found
     BlazeLayout.render('PackageDetail', {})

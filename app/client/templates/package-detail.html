@@ -2,46 +2,78 @@
   <body>
     {{> Header}}
     <div class="package-detail">
+      {{#with orderData}}
       <div class="container">
         <div class="row">
           <div id="details" class="col-md-3">
-
             <h1>Package ID</h1>
-            <p>6969</p>
+            <p>1</p>
 
             <h1>Shipper</h1>
-            <p>Amy</p>
+            <p>{{order.shipper}}</p>
 
             <h1>Courier</h1>
-            <p>Charles</p>
+            <p>{{order.courier}}</p>
 
             <h1>Origin</h1>
-            <p>2406 Blake St, Berkeley CA 94704</p>
+            <p>{{order.location}}</p>
 
             <h1>Destination</h1>
-            <p>1420 N Broadway, St. Louis, MO 63102</p>
+            <p>{{order.destination}}</p>
 
             <h1>Dimensions</h1>
-            <p>45cm x 60cm x 45cm | 20kg</p>
-            
-            <h1>Reward</h1>
-            <p>$20,000</p>
+            <p>{{order.dimension}} | {{order.weight}}kg</p>
 
+            <h1>Reward</h1>
+            <p>${{order.fee}}</p>
           </div>
           <div class="col-md-6">
-
-            <h1 class="log">Log</h1>
-            <ul>
-              <li><span class="timestamp">6/10/16 8:00am</span><p>Send request listed by Amy</p></li>
-              <li><span class="timestamp">6/11/16 8:34am</span><p>Send request accepted by Charles</p></li>
-              <li><span class="timestamp">6/11/13 9:15am</span><p>Package picked up</p></li>
-            </ul>
+            {{#if order.active}}
+              <h1 class="log">Event Log</h1>
+              <ul class="timeline">
+                <li class="timeline_item" event-date="Today">
+                  <p class="timeline_title">New Order Submitted</p>
+                  <p class="timeline_content">You have submitted a new order ready to be delivered by someone.</p>
+                </li>
+                <li class="timeline_item" event-date="Today">
+                  <p class="timeline_title">New Order Submitted</p>
+                  <p class="timeline_content">You have submitted a new order ready to be delivered by someone.</p>
+                </li>
+              </ul>
+            {{else}}
+              <img width="600" src="http://maps.googleapis.com/maps/api/staticmap?center=St.+Louis&zoom=13&scale=1&size=600x400&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:A%7CForest+Park+Ave,+St.+Louis&markers=size:mid%7Ccolor:0xff0000%7Clabel:B%7C1+Bond+Ave,+St.+Louis" alt="Google Map of St. Louis">
+            {{/if}}
 
           </div>
         </div>
       </div>
-      <!-- replace onclick with path -->
-      <button class="btn" type="button" onclick="window.location='/';">SEND A PACKAGE</button>
+
+      <!-- Button trigger modal -->
+      <button id="deliverPackage" type="button" class="btn" data-toggle="modal" data-target="#getDeposit">
+        DELIVER PACKAGE
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="getDeposit" tabindex="-1" role="dialog" aria-labelledby="getDepositLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="getDepositLabel">Fulfill Order</h4>
+            </div>
+            <div class="modal-body">
+              <h2>You do not have enough reputation. Because of that, you are required to pay the full value of the package as a security deposit. Once you have successfully delivered the package, you will receive this deposit back.</h2>
+              <br />
+              <h1>Deposit Amount: <strong>{{requiredDeposit order.address}} {{fromWei order.deposit}}</strong></h1>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <button id="fulfillOrder" type="button" class="btn btn-primary" data-dismiss="modal">FULFILL ORDER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/with}}
     </div>
   </body>
 </template>

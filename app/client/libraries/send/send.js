@@ -11,6 +11,8 @@ Template.Send.events({
     orderdata['dimension'] = parseInt($('#dimension').val());
     orderdata['fee'] = parseInt($('#fee').val());
     orderdata['active'] = false;
+    orderdata['shipper'] = "Shipper1";
+    orderdata['courier'] = "";
 
     //
     // This is fairly stupid as we're launching a new DAO contract with each new order
