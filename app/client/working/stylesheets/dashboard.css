@@ -1,0 +1,136 @@
+/* Styles dashboard.html */
+.header {
+  height: 25%;
+  background-color: #000000;
+  color: #FFCDB2;
+  font-family: BrandonGrotesque;
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 5;
+}
+
+.header h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.header img {
+  width: 4%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #000000;
+  background: #ffffff;
+  padding: 10px 27px 10px 27px;
+  text-decoration: none;
+  letter-spacing: 2;
+  position: relative;
+  margin-left: -200;
+  margin-top: -20;
+  font-family: BrandonGrotesque;
+  font-weight: 300;
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #FFCDB2;
+}
+
+.user-packages {
+  font-family: BrandonGrotesque;
+}
+
+.user-packages h2 {
+  letter-spacing: 2;
+  font-weight: 100;
+}
+
+#card {
+  margin-top: 10px;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  padding: 30 30 30 30;
+  font-weight: 700;
+  letter-spacing: 1;
+  transition: all 0.2s ease 0s;
+}
+
+#card .top-space {
+  margin-top: 20px;
+}
+
+#card p {
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+#card:hover {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  color: #FFCDB2;
+}
+
+.user-packages {
+  font-family: BrandonGrotesque;
+}
+
+.user-packages h2 {
+  letter-spacing: 2;
+  font-weight: 100;
+}
+
+#card {
+  margin-top: 10px;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  padding: 30 30 30 30;
+  font-weight: 700;
+  letter-spacing: 1;
+  transition: all 0.2s ease 0s;
+}
+
+#card .top-space {
+  margin-top: 20px;
+}
+
+#card p {
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+#card:hover {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  color: #FFCDB2;
+}
+
+.packages {
+  margin-top: 50px;
+  font-family: BrandonGrotesque;
+  padding-bottom: 100px;
+}
+
+.packages h2 {
+  letter-spacing: 2;
+  font-weight: 100;
+}
