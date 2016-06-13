@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-330.000000, -654.000000)" fill="#000000">
+            <g id="Card" transform="translate(70.000000, 344.000000)">
+                <g id="1465793208_arrow-right-01" transform="translate(267.687500, 315.187500) rotate(-270.000000) translate(-267.687500, -315.187500) translate(262.687500, 307.687500)">
+                    <g id="Layer_1">
+                        <path d="M8.931875,6.4225 L2.940625,0.43125 C2.391875,-0.1175 1.4925,-0.1175 0.94375,0.43125 L0.44375,0.93125 C-0.105,1.479375 -0.105,2.37875 0.44375,2.9275 L5.015,7.5 L0.443125,12.071875 C-0.105625,12.620625 -0.105625,13.52 0.443125,14.068125 L0.943125,14.568125 C1.491875,15.1175 2.39125,15.1175 2.94,14.568125 L8.93125,8.57625 C9.22625,8.281875 9.3575,7.886875 9.335625,7.499375 C9.358125,7.1125 9.226875,6.7175 8.931875,6.4225 L8.931875,6.4225 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
