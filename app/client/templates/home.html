@@ -1,10 +1,60 @@
 <template name="Home">
   <head>
-    <title>DeliverDAO</title>
+    <title>Deliver DAO | Dashboard</title>
   </head>
   <body>
-    <h1>DeliverDAO Home Page</h1>
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="/assets/coloredlogo.svg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h1>DELIVER DAO</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <a href="/send">Link to Send Page</a>
     <a href="/deliver">Link to Deliver Page</a>
+    <button class="btn">SEND PACKAGES</button>
+    <section class="user-packages">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>YOUR PACKAGE</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="card" class="col-md-3">
+            <h3>NAME OF PACKAGE</h3>
+            <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
+            <h4 class="top-space">DESTINATION</h4>
+            <p>Edison, NJ</p>
+            <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="packages">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>PACKAGES NEAR YOU</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="card" class="col-md-3">
+            <h3>NAME OF PACKAGE</h3>
+            <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
+            <h4 class="top-space">DESTINATION</h4>
+            <p>Edison, NJ</p>
+            <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </template>
