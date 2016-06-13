@@ -4,44 +4,46 @@
   </head>
   <body>
     {{> Header}}
-    <a href="/send">Link to Send Page</a>
-    <a href="/deliver">Link to Deliver Page</a>
-    <button class="btn">SEND PACKAGES</button>
-    <section class="user-packages">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2>YOUR PACKAGE</h2>
+    <div class="home">
+      <a href="/send">Link to Send Page</a>
+      <a href="/deliver">Link to Deliver Page</a>
+      <button class="btn">SEND PACKAGES</button>
+      <section class="user-packages">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>YOUR PACKAGE</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div id="card" class="col-md-3">
+              <h3>NAME OF PACKAGE</h3>
+              <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
+              <h4 class="top-space">DESTINATION</h4>
+              <p>Edison, NJ</p>
+              <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div id="card" class="col-md-3">
-            <h3>NAME OF PACKAGE</h3>
-            <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
-            <h4 class="top-space">DESTINATION</h4>
-            <p>Edison, NJ</p>
-            <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
+      </section>
+      <section class="packages">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>PACKAGES NEAR YOU</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div id="card" class="col-md-3">
+              <h3>NAME OF PACKAGE</h3>
+              <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
+              <h4 class="top-space">DESTINATION</h4>
+              <p>Edison, NJ</p>
+              <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="packages">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2>PACKAGES NEAR YOU</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div id="card" class="col-md-3">
-            <h3>NAME OF PACKAGE</h3>
-            <p class="top-space">Remember it’s called the creative process, it’s not the creative fucking moment.</p>
-            <h4 class="top-space">DESTINATION</h4>
-            <p>Edison, NJ</p>
-            <h4 id="val" class="top-space">VAL: ENTER VALUE HERE</h4>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </template>

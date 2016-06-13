@@ -3,6 +3,20 @@
     <title>DeliverDAO - Ship Package</title>
   </head>
   <body>
+    {{> Header}}
+    <div class="send">
+      <form class="new-package">
+        <input type="text" name="package-name" placeholder="Enter the Name of Your Package"/>
+        <textarea rows="4" cols="50" name="description" form="new-package">Describe Your Package Here</textarea>
+        <input type="text" name="package-name" placeholder="Enter Your Package's Current Location"/>
+        <input type="text" name="package-name" placeholder="Enter Your Package's Destination"/>
+        <input type="text" name="package-value" placeholder="Enter a Monetary Value for Your Package"/>
+        <input type="text" name="package-weight" placeholder="Enter the Weight of Your Package"/>
+        <input type="text" name="package-weight" placeholder="Enter the Dimensions of Your Package"/>
+        <input type="text" name="package-value" placeholder="Enter Your Fee"/>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
     <h1>DeliverDAO Ship Package Form</h1>
     <p>Include location, description, etc</p>
     <p>This page eventually needs to hook into local Ethereum client of the sender</p>
