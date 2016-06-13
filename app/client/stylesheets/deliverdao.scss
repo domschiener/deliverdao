@@ -232,13 +232,21 @@ body {
 .govern {
   fill: #000000;
   
+  h1 {
+    line-height: 35px;
+  }
+  
+  p {
+    font-weight: 100;
+  }
+  
   .vote {
     padding-top: 20px;
   }
   
   .row .col-md-1 p {
     margin-left: 4px;
-    margin-top: 4px;
+    margin-top: 2px;
   }
   
   .row .col-md-1 img {
@@ -250,5 +258,24 @@ body {
   
   #rightpad {
     padding-right: 20px;
+  }
+  
+  .btn {
+    margin-top: -810px;
+    margin-left: 1020px;
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    color: #000000;
+    background: #ffffff;
+    padding: 10px 27px 10px 27px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    letter-spacing: 2px;
+  }
+
+  .btn:hover {
+    color: #FFCDB2;
+    text-decoration: none;
   }
 }
