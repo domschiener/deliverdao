@@ -43,7 +43,7 @@ body {
     }
   
   #main {
-    margin-top: 100px;
+    margin-top: 140px;
     
     h1 {
       font-size: 4em;
@@ -226,5 +226,37 @@ body {
         text-decoration: none;
         color: #FFCDB2;
     }
+  }
+}
+
+.govern {
+  fill: #000000;
+  
+  .vote {
+    padding-top: 20px;
+  }
+  
+  .row .col-md-1 p {
+    margin-left: 4px;
+    margin-top: 4px;
+  }
+  
+  .row .col-md-1 img {
+    padding: 8px 28px 10px 10px;
+    border: solid 2px #000000;
+    margin-top: -4px;
+    border-radius: 4px;
+  }
+  
+  .row .col-md-1 img:hover {
+    padding: 8px 28px 10px 10px;
+    border: solid 2px #000000;
+    background-color: #000000;
+    margin-top: -4px;
+    border-radius: 4px;
+  }
+  
+  #rightpad {
+    padding-right: 20px;
   }
 }
