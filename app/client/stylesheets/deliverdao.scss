@@ -26,7 +26,6 @@ body {
 /* Styles home.html */
 .landing {
     nav {
-      
       letter-spacing: 2px;
       font-weight: 300;
       
@@ -34,7 +33,7 @@ body {
       margin-top: 50px;
       
       ul li a {
-        color: #ffffff;
+        color: #000000;
       }
       
       ul li a:hover {
@@ -232,18 +231,65 @@ body {
 //}
 
 .send {
+  
+  padding-top: 20px;
+  
   .new-package {
-    
     font-family: BrandonGrotesque;
     
     input {
       width: 100%;
       height: auto;
+      padding-bottom: 4px;
     }
     
     input[type=text] {
       border: none;
       border-bottom: 2px solid #000000;
+      background-color: transparent;
+      margin-top: 20px;
     } 
+    
+    textarea {
+      margin-top: 20px;
+      width: 100%;
+      background-color: transparent;
+      border: 2px solid #000000;
+    }
+    
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #CDA48F;
+    }
+    
+    textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #CDA48F;
+    }
+    
+    .btn {
+      letter-spacing: 2px;
+      -webkit-border-radius: 4;
+      -moz-border-radius: 4;
+      border-radius: 4px;
+      color: #FFCDB2;
+      background: #000000;
+      padding: 10px 27px 10px 27px;
+      text-decoration: none;
+      letter-spacing: 2;
+      position: relative;
+      margin-left: -200;
+      margin-top: -20;
+      font-family: BrandonGrotesque;
+      font-weight: 300;
+      transition: all 0.3s ease 0s;
+    }
+
+    .btn:hover {
+        text-decoration: none;
+        color: #FFCDB2;
+    }
   }
 }
