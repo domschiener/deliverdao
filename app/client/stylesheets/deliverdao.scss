@@ -28,38 +28,38 @@ body {
     nav {
       letter-spacing: 2px;
       font-weight: 300;
-      
+
       margin-left: 225px;
       margin-top: 50px;
-      
+
       ul li a {
         color: #000000;
       }
-      
+
       ul li a:hover {
         font-size: 1.2em;
         text-decoration: none;
       }
     }
-  
+
   #main {
     margin-top: 140px;
-    
+
     h1 {
       font-size: 4em;
       margin-left: -4px;
     }
-    
+
     p {
       margin-top: -40px;
       font-size: 1.2em;
       font-weight: 100;
     }
-    
+
     img {
       width: 100%;
     }
-    
+
     .btn {
         font-weight: 300;
         margin-top: 20px;
@@ -97,12 +97,12 @@ body {
     font-weight: 700;
     font-size: 2em;
     letter-spacing: 5;
-    
+
     h1 {
         text-align: center;
         margin-top: 0;
     }
-    
+
     img {
         width: 4%;
         height: auto;
@@ -115,13 +115,13 @@ body {
 }
 
 .package-detail {
-    
+
   margin-top: 40px;
   padding-bottom: -4px;
   margin-bottom: 40px;
-  
+
   #details {
-    
+
     background-color: #ffffff;
     border-right: 2px solid #000000;
     padding: 10px 20px 20px 20px;
@@ -131,17 +131,18 @@ body {
     -webkit-border-bottom-left-radius: 4;
     -moz-border-bottom-left-radius: 4;
     border-bottom-left-radius: 4px;
-    
+    margin-right: 40px;
+
     h1 {
       font-size: 1.5em;
     }
-    
+
     p {
       margin-top: -15px;
       font-weight: 100;
-    } 
+    }
   }
-  
+
   .btn {
       letter-spacing: 2px;
       -webkit-border-radius: 4;
@@ -168,42 +169,42 @@ body {
 
 .send {
   padding-top: 20px;
-  
+
   .new-package {
     font-family: BrandonGrotesque;
-    
+
     input {
       width: 100%;
       height: auto;
       padding-bottom: 4px;
     }
-    
+
     input[type=text] {
       border: none;
       border-bottom: 2px solid #000000;
       background-color: transparent;
       margin-top: 20px;
-    } 
-    
+    }
+
     textarea {
       margin-top: 20px;
       width: 100%;
       background-color: transparent;
       border: 2px solid #000000;
     }
-    
+
     input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #CDA48F;
     }
-    
+
     textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #CDA48F;
     }
-    
+
     .btn {
       letter-spacing: 2px;
       -webkit-border-radius: 4;
@@ -229,8 +230,42 @@ body {
   }
 }
 
+/**
+  *   Timeline
+  **/
+
+.timeline {
+  width: 650px;
+  margin: 25px auto;
+  list-style: none;
+  border-left: 4px solid #000;
+  background-color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.timeline_item {
+  border-bottom: 1px dashed #ccc;
+  padding: 25px 0;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.timeline_item::before {
+  content: attr(event-date);
+}
+
+.timeline_title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.timeline_content {
+  font-size: 16px;
+}
+
 .govern {
   fill: #000000;
+<<<<<<< HEAD
   
   h1 {
     line-height: 35px;
@@ -240,25 +275,29 @@ body {
     font-weight: 100;
   }
   
+=======
+
+>>>>>>> 2d2bd0b30095140598a7321ab078526105479020
   .vote {
     padding-top: 20px;
   }
-  
+
   .row .col-md-1 p {
     margin-left: 4px;
     margin-top: 2px;
   }
-  
+
   .row .col-md-1 img {
     padding: 8px 28px 10px 10px;
     border: solid 2px #000000;
     margin-top: -4px;
     border-radius: 4px;
   }
-  
+
   #rightpad {
     padding-right: 20px;
   }
+<<<<<<< HEAD
   
   .btn {
     margin-top: -810px;
@@ -279,3 +318,6 @@ body {
     text-decoration: none;
   }
 }
+=======
+}
+>>>>>>> 2d2bd0b30095140598a7321ab078526105479020
