@@ -2,26 +2,31 @@
   <title>Deliver DAO</title>
 </head>
 <template name="Home">
-  <body>
-    <div class="home container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-
-          <div class="jumbotron">
-            <h1>Deliver DAO</h1>
-            <p>Lorem ipsum dolor sit amet</p>
+  <div class="landing">
+    <body>
+      <nav>
+        <ul>
+          <li><a href="/deliver">FULLFILL A PACKAGE</a></li>
+        </ul>
+      </nav>
+      <div id="main" class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2">
+            <div class="jumbotron">
+              <h1>DELIVER DAO</h1>
+              <p>Practice won’t get you anywhere if you mindlessly fucking practice the same thing. Change only occurs when you work deliberately with purpose toward a goal. If you fucking give up…</p>
+              <button class="btn" type="button" onclick="window.location='/deliver';">SEND A PACKAGE</button>
+            </div>
           </div>
-
+          <div class="col-md-4">
+            <img src="/assets/floatybox.svg">
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="/assets/floatybox.svg">
-        </div>
+<!--
+        <a href="/send">Link to Send Page</a>
+        <a href="/deliver">Link to Deliver Page</a>
+-->
       </div>
-
-      <a href="/send">Link to Send Page</a>
-      <a href="/deliver">Link to Deliver Page</a>
-      <button class="btn">SEND A PACKAGE</button>
-
-    </div>
-  </body>
+    </body>
+  </div>
 </template>
