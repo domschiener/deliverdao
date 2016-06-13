@@ -115,24 +115,35 @@ body {
 }
 
 .package-detail {
-
+    
+  margin-top: 40px;
+  padding-bottom: -4px;
+  margin-bottom: 40px;
+  
+  #details {
+    
+    background-color: #ffffff;
+    border-right: 2px solid #000000;
+    padding: 10px 20px 20px 20px;
+    -webkit-border-top-left-radius: 4;
+    -moz-border-top-left-radius: 4;
+    border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4;
+    -moz-border-bottom-left-radius: 4;
+    border-bottom-left-radius: 4px;
+    
     h1 {
-        font-size: 36px;
+      font-size: 1.5em;
     }
-  
-    h3 {
-        font-size: 20px;
-        margin-top: 20px
-    }
-  
+    
     p {
-        font-size: 12px;
-    }
-  
+      margin-top: -15px;
+      font-weight: 100;
+    } 
+  } 
 }
 
 .send {
-  
   padding-top: 20px;
   
   .new-package {

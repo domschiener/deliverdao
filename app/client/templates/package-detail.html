@@ -2,39 +2,44 @@
   <body>
     {{> Header}}
     <div class="package-detail">
-      <div class="col-md-3">
+      <div class="container">
+        <div class="row">
+          <div id="details" class="col-md-3">
 
-        <h3>Package ID</h3>
-        <p>6969</p>
+            <h1>Package ID</h1>
+            <p>6969</p>
 
-        <h3>Shipper</h3>
-        <p>Amy</p>
+            <h1>Shipper</h1>
+            <p>Amy</p>
 
-        <h3>Courier</h3>
-        <p>Charles</p>
+            <h1>Courier</h1>
+            <p>Charles</p>
 
-        <h3>Origin</h3>
-        <p>2406 Blake St, Berkeley CA 94704</p>
+            <h1>Origin</h1>
+            <p>2406 Blake St, Berkeley CA 94704</p>
 
-        <h3>Destination</h3>
-        <p>1420 N Broadway, St. Louis, MO 63102</p>
+            <h1>Destination</h1>
+            <p>1420 N Broadway, St. Louis, MO 63102</p>
 
-        <h3>Dimensions</h3>
-        <p>45cm x 60cm x 45cm | 20kg</p>
+            <h1>Dimensions</h1>
+            <p>45cm x 60cm x 45cm | 20kg</p>
+            
+            <h1>Reward</h1>
+            <p>$20,000</p>
 
+          </div>
+          <div class="col-md-6">
 
+            <h1 class="log">Log</h1>
+            <ul>
+              <li><span class="timestamp">6/10/16 8:00am</span><p>Send request listed by Amy</p></li>
+              <li><span class="timestamp">6/11/16 8:34am</span><p>Send request accepted by Charles</p></li>
+              <li><span class="timestamp">6/11/13 9:15am</span><p>Package picked up</p></li>
+            </ul>
+
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-
-        <h1 class="log">Log</h1>
-        <ul>
-          <li><span class="timestamp">6/10/16 8:00am</span><p>Send request listed by Amy</p></li>
-          <li><span class="timestamp">6/11/16 8:34am</span><p>Send request accepted by Charles</p></li>
-          <li><span class="timestamp">6/11/13 9:15am</span><p>Package picked up</p></li>
-        </ul>
-
-      </div>
-
     </div>
   </body>
 </template>
