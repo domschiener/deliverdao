@@ -23,6 +23,7 @@
 
 body {
   background-color: #FFCDB2;
+  color: #000000;
 }
 
 /* Styles dashboard.html */
@@ -167,5 +168,16 @@ body {
 .send {
   .new-package {
     
+    font-family: BrandonGrotesque;
+    
+    input {
+      width: 100%;
+      height: auto;
+    }
+    
+    input[type=text] {
+      border: none;
+      border-bottom: 2px solid #000000;
+    } 
   }
 }
