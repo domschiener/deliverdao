@@ -163,7 +163,6 @@ contract DeliveryManagement is UserManagement {
       thisDelivery.shipper.send(thisDelivery.deposit + thisDelivery.fee);
       thisDelivery.active = false;
       thisDelivery.beingShipped = false;
-      thisDelivery.arrived = false;
     }
   }
 }
@@ -179,11 +178,54 @@ contract DeliverDAO is UserManagement, DeliveryManagement {
     uint threshold;
     bool active;
     bool successful;
+    mapping (address => bool) voters;
   }
 
-  uint numProposals;
+  uint numProposals = 0;
 
-  mapping (uint => Proposal) proposals;
+  mapping (uint => Proposal) public proposals;
 
-  
+  modifier isDAOmember { if (couriers[msg.sender].name != bytes32(0x0) && shippers[msg.sender].name != bytes32(0x0)) _ }
+
+  function createProposal (
+    bytes32 _name,
+    string _description,
+    uint _requestedAmount
+  ) isDAOmember constant returns (uint proposal) {
+
+    if (_requestedAmount > address(this).balance) {
+      throw;
+    }
+
+    Proposal newProposal;
+    newProposal.name = _name;
+    newProposal.description = _description;
+    newProposal.creator = msg.sender;
+    newProposal.requestedAmount = _requestedAmount;
+    newProposal.weightedVote = 0;
+    newProposal.threshold = address(this).balance / 2;
+    newProposal.active = true;
+    newProposal.successful = false;
+
+    proposals[numProposals] = newProposal;
+    numProposals += 1;
+
+    return numProposals - 1;
+  }
+
+  function voteProposal(uint id) isDAOmember {
+    Proposal thisProposal = proposals[id];
+
+    if (thisProposal.voters[msg.sender] == true) {
+      throw;
+    }
+
+    if (couriers[msg.sender].name == bytes32(0x0)) {
+      thisProposal.weightedVote += shippers[msg.sender].totalSent;
+    } else {
+      thisProposal.weightedVote += couriers[msg.sender].totalDelivered;
+    }
+
+    thisProposal.voters[msg.sender] = true;
+  }
 }
