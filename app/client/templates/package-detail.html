@@ -1,15 +1,38 @@
 <template name="PackageDetail">
-  <head>
-    <title>DeliverDAO - Deliver Package</title>
-  </head>
   <body>
     {{> Header}}
-    <div class="">
-    
+    <div class="package-detail">
+      <div class="col-md-3">
+
+        <h1>Package ID</h1>
+        <p>Package description</p>
+
+        <h3>Shipper</h3>
+        <p>Amy</p>
+
+        <h3>Courier</h3>
+        <p>Charles</p>
+
+        <h3>Origin</h3>
+        <p>2406 Blake St, Berkeley CA 94704</p>
+
+        <h3>Destination</h3>
+        <p>1420 N Broadway, St. Louis, MO 63102</p>
+
+        <h3>Dimensions</h3>
+        <p>45cm x 60cm x 45cm | 20kg</p>
+
+        <h3>Log</h3>
+        <ul>
+          <li><span class="timestamp">6/10/16 8:00am</span><p>Send request listed by Amy</p></li>
+          <li><span class="timestamp">6/11/16 8:34am</span><p>Send request accepted by Charles</p></li>
+          <li><span class="timestamp">6/11/13 9:15am</span><p>Package picked up</p></li>
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+      </div>
+
     </div>
-    <button></button>
-    <p>Include deliverer, receiver, etc</p>
-    <p>This should look the same for both the shipper and the deliverer</p>
-    <a href="/">Link to Home</a>
   </body>
 </template>
