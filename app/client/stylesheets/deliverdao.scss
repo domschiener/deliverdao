@@ -140,7 +140,30 @@ body {
       margin-top: -15px;
       font-weight: 100;
     } 
-  } 
+  }
+  
+  .btn {
+      letter-spacing: 2px;
+      -webkit-border-radius: 4;
+      -moz-border-radius: 4;
+      border-radius: 4px;
+      color: #FFCDB2;
+      background: #000000;
+      padding: 10px 27px 10px 27px;
+      text-decoration: none;
+      letter-spacing: 2;
+      position: relative;
+      margin-top: -50px;
+      margin-left: 1020px;
+      font-family: BrandonGrotesque;
+      font-weight: 300;
+      transition: all 0.3s ease 0s;
+    }
+
+    .btn:hover {
+        text-decoration: none;
+        color: #FFCDB2;
+    }
 }
 
 .send {
